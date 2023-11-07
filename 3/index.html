@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Projects/3/style.css">
+  <title>DiveSea</title>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li><a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
+                <path
+                  d="M46.9274 36.1276C44.9841 36.1276 44.1228 35.3768 42.9082 34.3168C41.5611 33.1684 39.8828 31.7109 36.7249 31.7109C33.5449 31.7109 31.8886 33.1684 30.5415 34.3168C29.327 35.3768 28.4437 36.1276 26.5003 36.1276C24.5791 36.1276 23.6957 35.3768 22.4811 34.3168C21.1341 33.1684 19.4558 31.7109 16.2978 31.7109C13.1178 31.7109 11.4395 33.1684 10.0924 34.3168C8.87784 35.3768 8.01658 36.1276 6.07324 36.1276C5.16783 36.1276 4.41699 36.8784 4.41699 37.7839C4.41699 38.7114 5.16783 39.4401 6.07324 39.4401C9.25324 39.4401 10.9095 38.0047 12.2565 36.8343C13.4711 35.7743 14.3545 35.0234 16.2978 35.0234C18.2412 35.0234 19.1024 35.7743 20.317 36.8343C21.6641 38.0047 23.3424 39.4401 26.5003 39.4401C29.6803 39.4401 31.3587 38.0047 32.7057 36.8343C33.9203 35.7743 34.7816 35.0234 36.7249 35.0234C38.6462 35.0234 39.5295 35.7743 40.7441 36.8343C42.0912 38.0047 43.7695 39.4401 46.9274 39.4401C47.8328 39.4401 48.5837 38.7114 48.5837 37.7839C48.5837 36.8784 47.8328 36.1276 46.9274 36.1276Z"
+                  fill="#141416" />
+                <path
+                  d="M46.9274 27.0309C44.9841 27.0309 44.1228 26.258 42.9082 25.2201C41.5611 24.0497 39.8828 22.6143 36.7249 22.6143C33.5449 22.6143 31.8886 24.0497 30.5415 25.2201C29.327 26.258 28.4437 27.0309 26.5003 27.0309C24.5791 27.0309 23.6957 26.258 22.4811 25.2201C21.1341 24.0497 19.4558 22.6143 16.2978 22.6143C13.1178 22.6143 11.4395 24.0497 10.0924 25.2201C8.87784 26.258 8.01658 27.0309 6.07324 27.0309C5.16783 27.0309 4.41699 27.7597 4.41699 28.6872C4.41699 29.5926 5.16783 30.3434 6.07324 30.3434C9.25324 30.3434 10.9095 28.8859 12.2565 27.7155C13.4711 26.6776 14.3545 25.9268 16.2978 25.9268C18.2412 25.9268 19.1024 26.6776 20.317 27.7155C21.6641 28.8859 23.3424 30.3434 26.5003 30.3434C29.6803 30.3434 31.3587 28.8859 32.7057 27.7155C33.9203 26.6776 34.7816 25.9268 36.7249 25.9268C38.6462 25.9268 39.5295 26.6776 40.7441 27.7155C42.0912 28.8859 43.7695 30.3434 46.9274 30.3434C47.8328 30.3434 48.5837 29.5926 48.5837 28.6872C48.5837 27.7597 47.8328 27.0309 46.9274 27.0309Z"
+                  fill="#141416" />
+                <path
+                  d="M6.07324 21.2887C9.25324 21.2887 10.9095 19.8312 12.2565 18.6829C13.4711 17.6229 14.3545 16.8721 16.2978 16.8721C18.2412 16.8721 19.1024 17.6229 20.317 18.6829C21.6641 19.8312 23.3424 21.2887 26.5003 21.2887C29.6803 21.2887 31.3587 19.8312 32.7057 18.6829C33.9203 17.6229 34.7816 16.8721 36.7249 16.8721C38.6462 16.8721 39.5295 17.6229 40.7441 18.6829C42.0912 19.8312 43.7695 21.2887 46.9274 21.2887C47.8328 21.2887 48.5837 20.5379 48.5837 19.6325C48.5837 18.705 47.8328 17.9762 46.9274 17.9762C44.9841 17.9762 44.1228 17.2254 42.9082 16.1654C41.5611 14.995 39.8828 13.5596 36.7249 13.5596C33.5449 13.5596 31.8886 14.995 30.5415 16.1654C29.327 17.2254 28.4437 17.9762 26.5003 17.9762C24.5791 17.9762 23.6957 17.2254 22.4811 16.1654C21.1341 14.995 19.4558 13.5596 16.2978 13.5596C13.1178 13.5596 11.4395 14.995 10.0924 16.1654C8.87784 17.2254 8.01658 17.9762 6.07324 17.9762C5.16783 17.9762 4.41699 18.705 4.41699 19.6325C4.41699 20.5379 5.16783 21.2887 6.07324 21.2887Z"
+                  fill="#141416" />
+              </svg>
+            </a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Creators</a></li>
+          <li><a href="#">Sell</a></li>
+          <li><a href="#">Stats</a></li>
+        </ul>
+        <ol>
+          <li class="search"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none">
+              <path
+                d="M9.94976 17.7296C14.5695 17.7296 18.3146 13.9845 18.3146 9.3648C18.3146 4.74505 14.5695 1 9.94976 1C5.33001 1 1.58496 4.74505 1.58496 9.3648C1.58496 13.9845 5.33001 17.7296 9.94976 17.7296Z"
+                stroke="#9D9D9D" stroke-width="1.79246" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M15.9248 15.3398L23.0946 22.5097" stroke="#9D9D9D" stroke-width="1.79246" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <input type="text" placeholder="Search Art Work / Creator">
+          </li>
+          <li><button>connect wallet</button></li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="header-container">
+      <div class="header-container_info">
+        <h1><span id="h-span">Disco</span>ver And Create NFTs</h1>
+        <p>Discover, Create and Sell NFTs On Our NFT Marketplace With Over Thousands Of NFTs And Get a <span
+            id="p-span">$20 bonus.</span></p>
+        <button>EXPLORE MORE</button>
+        <button id="header-btn">CREATE NFT</button>
+        <div class="header-container_info1">
+          <div class="header-container_info__h1">
+            <h2>430K+</h2>
+            <h3>Art Works</h3>
+          </div>
+          <div class="header-container_info__h2">
+            <h2>159K+</h2>
+            <h3>Creators</h3>
+          </div>
+          <div class="header-container_info__h3">
+            <h2>87K+</h2>
+            <h3>Collections</h3>
+          </div>
+        </div>
+      </div>
+      <div class="header-container_img">
+        <div class="header-container_img__col1">
+          <img src="/Projects/3/img/Rectangle 3.png" alt="">
+          <div class="header-container_img__col1___arrows">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.2397 8.38963C10.8023 7.98584 10.1203 8.01311 9.71654 8.45055L6.23402 12.2232C5.85287 12.6361 5.85287 13.2726 6.23401 13.6855L9.71653 17.4583C10.1203 17.8957 10.8023 17.923 11.2397 17.5192C11.6772 17.1154 11.7045 16.4335 11.3007 15.996L9.48802 14.0323L19.9611 14.0323C20.5565 14.0323 21.0391 13.5497 21.0391 12.9544C21.0391 12.3591 20.5565 11.8765 19.9611 11.8765L9.48805 11.8765L11.3007 9.91283C11.7044 9.47539 11.6772 8.79343 11.2397 8.38963Z"
+                fill="#929292" />
+            </svg>
+            <img src="/Projects/3/img/Frame 14.png" alt="...">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.7603 8.38963C16.1977 7.98584 16.8797 8.01311 17.2835 8.45055L20.766 12.2232C21.1471 12.6361 21.1471 13.2726 20.766 13.6855L17.2835 17.4583C16.8797 17.8957 16.1977 17.923 15.7603 17.5192C15.3228 17.1154 15.2955 16.4335 15.6993 15.996L17.512 14.0323L7.03886 14.0323C6.44354 14.0323 5.96094 13.5497 5.96094 12.9544C5.96094 12.3591 6.44354 11.8765 7.03886 11.8765L17.5119 11.8765L15.6993 9.91283C15.2956 9.47539 15.3228 8.79343 15.7603 8.38963Z"
+                fill="#23262F" />
+            </svg>
+          </div>
+        </div>
+        <div class="header-container_img__col2">
+          <div class="header-container_img__col2___decor">
+            <svg xmlns="http://www.w3.org/2000/svg" width="131" height="136" viewBox="0 0 131 136" fill="none">
+              <path
+                d="M15.6507 43.2949C32.4339 30.7255 51.9743 23.0115 72.683 28.6293C91.3749 33.7001 103.143 49.6308 90.5396 69.3323C84.5735 78.6586 71.8706 85.1866 61.8852 79.874C50.7606 73.9554 59.5288 59.017 66.6505 54.7089C83.2839 44.6468 106.696 49.3237 118.212 68.8676C131.849 92.0121 108.785 103.532 108.769 103.344"
+                stroke="black" stroke-width="3.37884" stroke-miterlimit="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M19.2682 18.3822C19.8774 20.8066 19.5256 23.2337 19.2862 25.6772C18.5006 33.7008 15.3552 42.0309 9.71151 47.2933C17.1379 44.0371 27.7921 42.619 34.5374 48.3347"
+                stroke="black" stroke-width="3.37884" stroke-miterlimit="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="193" viewBox="0 0 120 193" fill="none">
+              <g opacity="0.5">
+                <rect width="2.83607" height="2.84073" fill="black" />
+                <rect x="18.9062" width="2.83607" height="2.84073" fill="black" />
+                <rect x="37.8145" width="2.83607" height="2.84073" fill="black" />
+                <rect x="56.7217" width="2.83607" height="2.84073" fill="black" />
+                <rect x="75.6279" width="2.83607" height="2.84073" fill="black" />
+                <rect x="94.5361" width="2.83607" height="2.84073" fill="black" />
+                <rect x="113.443" width="2.83607" height="2.84073" fill="black" />
+                <rect y="18.9377" width="2.83607" height="2.84073" fill="black" />
+                <rect x="18.9062" y="18.9377" width="2.83607" height="2.84073" fill="black" />
+                <rect x="37.8145" y="18.9377" width="2.83607" height="2.84073" fill="black" />
+                <rect x="56.7217" y="18.9377" width="2.83607" height="2.84073" fill="black" />
+                <rect x="75.6279" y="18.9377" width="2.83607" height="2.84073" fill="black" />
+                <rect x="94.5361" y="18.9377" width="2.83607" height="2.84073" fill="black" />
+                <rect x="113.443" y="18.9377" width="2.83607" height="2.84073" fill="black" />
+                <rect y="37.8765" width="2.83607" height="2.84073" fill="black" />
+                <rect x="18.9062" y="37.8765" width="2.83607" height="2.84073" fill="black" />
+                <rect x="37.8145" y="37.8765" width="2.83607" height="2.84073" fill="black" />
+                <rect x="56.7217" y="37.8765" width="2.83607" height="2.84073" fill="black" />
+                <rect x="75.6279" y="37.8765" width="2.83607" height="2.84073" fill="black" />
+                <rect x="94.5361" y="37.8765" width="2.83607" height="2.84073" fill="black" />
+                <rect x="113.443" y="37.8765" width="2.83607" height="2.84073" fill="black" />
+                <rect y="56.8152" width="2.83607" height="2.84073" fill="black" />
+                <rect x="18.9062" y="56.8152" width="2.83607" height="2.84073" fill="black" />
+                <rect x="37.8145" y="56.8152" width="2.83607" height="2.84073" fill="black" />
+                <rect x="56.7217" y="56.8152" width="2.83607" height="2.84073" fill="black" />
+                <rect x="75.6279" y="56.8152" width="2.83607" height="2.84073" fill="black" />
+                <rect x="94.5361" y="56.8152" width="2.83607" height="2.84073" fill="black" />
+                <rect x="113.443" y="56.8152" width="2.83607" height="2.84073" fill="black" />
+                <rect y="75.7527" width="2.83607" height="2.84073" fill="black" />
+                <rect x="18.9062" y="75.7527" width="2.83607" height="2.84073" fill="black" />
+                <rect x="37.8145" y="75.7527" width="2.83607" height="2.84073" fill="black" />
+                <rect x="56.7217" y="75.7527" width="2.83607" height="2.84073" fill="black" />
+                <rect x="75.6279" y="75.7527" width="2.83607" height="2.84073" fill="black" />
+                <rect x="94.5361" y="75.7527" width="2.83607" height="2.84073" fill="black" />
+                <rect x="113.443" y="75.7527" width="2.83607" height="2.84073" fill="black" />
+                <rect y="94.6914" width="2.83607" height="2.84073" fill="black" />
+                <rect x="18.9062" y="94.6914" width="2.83607" height="2.84073" fill="black" />
+                <rect x="37.8145" y="94.6914" width="2.83607" height="2.84073" fill="black" />
+                <rect x="56.7217" y="94.6914" width="2.83607" height="2.84073" fill="black" />
+                <rect x="75.6279" y="94.6914" width="2.83607" height="2.84073" fill="black" />
+                <rect x="94.5361" y="94.6914" width="2.83607" height="2.84073" fill="black" />
+                <rect x="113.443" y="94.6914" width="2.83607" height="2.84073" fill="black" />
+                <rect y="113.629" width="2.83607" height="2.84073" fill="black" />
+                <rect x="18.9062" y="113.629" width="2.83607" height="2.84073" fill="black" />
+                <rect x="37.8145" y="113.629" width="2.83607" height="2.84073" fill="black" />
+                <rect x="56.7217" y="113.629" width="2.83607" height="2.84073" fill="black" />
+                <rect x="75.6279" y="113.629" width="2.83607" height="2.84073" fill="black" />
+                <rect x="94.5361" y="113.629" width="2.83607" height="2.84073" fill="black" />
+                <rect x="113.443" y="113.629" width="2.83607" height="2.84073" fill="black" />
+                <rect y="132.567" width="2.83607" height="2.84073" fill="black" />
+                <rect x="18.9062" y="132.568" width="2.83607" height="2.84073" fill="black" />
+                <rect x="37.8145" y="132.568" width="2.83607" height="2.84073" fill="black" />
+                <rect x="56.7217" y="132.568" width="2.83607" height="2.84073" fill="black" />
+                <rect x="75.6279" y="132.568" width="2.83607" height="2.84073" fill="black" />
+                <rect x="94.5361" y="132.568" width="2.83607" height="2.84073" fill="black" />
+                <rect x="113.443" y="132.568" width="2.83607" height="2.84073" fill="black" />
+                <rect y="151.506" width="2.83607" height="2.84073" fill="black" />
+                <rect x="18.9062" y="151.506" width="2.83607" height="2.84073" fill="black" />
+                <rect x="37.8145" y="151.506" width="2.83607" height="2.84073" fill="black" />
+                <rect x="56.7217" y="151.506" width="2.83607" height="2.84073" fill="black" />
+                <rect x="75.6279" y="151.506" width="2.83607" height="2.84073" fill="black" />
+                <rect x="94.5361" y="151.506" width="2.83607" height="2.84073" fill="black" />
+                <rect x="113.443" y="151.506" width="2.83607" height="2.84073" fill="black" />
+                <rect y="170.443" width="2.83607" height="2.84073" fill="black" />
+                <rect x="18.9062" y="170.443" width="2.83607" height="2.84073" fill="black" />
+                <rect x="37.8145" y="170.443" width="2.83607" height="2.84073" fill="black" />
+                <rect x="56.7217" y="170.443" width="2.83607" height="2.84073" fill="black" />
+                <rect x="75.6279" y="170.443" width="2.83607" height="2.84073" fill="black" />
+                <rect x="94.5361" y="170.443" width="2.83607" height="2.84073" fill="black" />
+                <rect x="113.443" y="170.443" width="2.83607" height="2.84073" fill="black" />
+                <rect y="189.382" width="2.83607" height="2.84073" fill="black" />
+                <rect x="18.9062" y="189.383" width="2.83607" height="2.84073" fill="black" />
+                <rect x="37.8145" y="189.383" width="2.83607" height="2.84073" fill="black" />
+                <rect x="56.7217" y="189.383" width="2.83607" height="2.84073" fill="black" />
+                <rect x="75.6279" y="189.383" width="2.83607" height="2.84073" fill="black" />
+                <rect x="94.5361" y="189.383" width="2.83607" height="2.84073" fill="black" />
+                <rect x="113.443" y="189.383" width="2.83607" height="2.84073" fill="black" />
+              </g>
+            </svg>
+          </div>
+          <img src="/Projects/3/img/Rectangle 3 (1).png" alt="...">
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <section>
+    <div class="weekly">
+      <h2 class="weekly-h1">Weekly - Top NFT</h2>
+      <div class="weekly-cards">
+        <div class="weekly-cards_card1">
+          <img src="/Projects/3/img/image.png" alt="">
+          <div class="weekly-cards_card1__info">
+            <h2>Sun-Glass</h2>
+            <h3>Current bid</h3>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M11.3438 1.63513L5.83008 10.8982L11.3438 14.2064L16.8575 10.8982L11.3438 1.63513ZM5.83008 12.0009L11.3438 19.7201L16.8575 12.0009L11.3438 15.3092L5.83008 12.0009Z"
+                  fill="#141416" />
+              </svg> 1.75</p>
+          </div>
+          <button>PLACE BID</button>
+        </div>
+        <div class="weekly-cards_card2">
+          <img src="/Projects/3/img/Rectangle 3 (2).png" alt="">
+          <div class="weekly-cards_card1__info">
+            <h2>Sun-Glass</h2>
+            <h3>Current bid</h3>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M11.3438 1.63513L5.83008 10.8982L11.3438 14.2064L16.8575 10.8982L11.3438 1.63513ZM5.83008 12.0009L11.3438 19.7201L16.8575 12.0009L11.3438 15.3092L5.83008 12.0009Z"
+                  fill="#141416" />
+              </svg> 1.75</p>
+          </div>
+          <button>PLACE BID</button>
+        </div>
+        <div class="weekly-cards_card3">
+          <img src="/Projects/3/img/Rectangle 3 (3).png" alt="">
+          <div class="weekly-cards_card1__info">
+            <h2>Sun-Glass</h2>
+            <h3>Current bid</h3>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M11.3438 1.63513L5.83008 10.8982L11.3438 14.2064L16.8575 10.8982L11.3438 1.63513ZM5.83008 12.0009L11.3438 19.7201L16.8575 12.0009L11.3438 15.3092L5.83008 12.0009Z"
+                  fill="#141416" />
+              </svg> 1.75</p>
+          </div>
+          <button>PLACE BID</button>
+        </div>
+        <div class="weekly-cards_card4">
+          <img src="/Projects/3/img/image (1).png" alt="">
+          <div class="weekly-cards_card1__info">
+            <h2>NuEvey</h2>
+            <h3>Current bid</h3>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M11.3438 1.63513L5.83008 10.8982L11.3438 14.2064L16.8575 10.8982L11.3438 1.63513ZM5.83008 12.0009L11.3438 19.7201L16.8575 12.0009L11.3438 15.3092L5.83008 12.0009Z"
+                  fill="#141416" />
+              </svg> 1.25</p>
+          </div>
+          <button>PLACE BID</button>
+        </div>
+        <div class="weekly-cards_card5">
+          <img src="/Projects/3/img/image (2).png" alt="">
+          <div class="weekly-cards_card1__info">
+            <h2>NuEvey</h2>
+            <h3>Current bid</h3>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M11.3438 1.63513L5.83008 10.8982L11.3438 14.2064L16.8575 10.8982L11.3438 1.63513ZM5.83008 12.0009L11.3438 19.7201L16.8575 12.0009L11.3438 15.3092L5.83008 12.0009Z"
+                  fill="#141416" />
+              </svg> 1.25</p>
+          </div>
+          <button>PLACE BID</button>
+        </div>
+      </div>
+    </div>
+    <div class="weekly-cards_other">
+      <div class="weekly-cards_arrows">
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M11.2397 8.38963C10.8023 7.98584 10.1203 8.01311 9.71654 8.45055L6.23402 12.2232C5.85287 12.6361 5.85287 13.2726 6.23401 13.6855L9.71653 17.4583C10.1203 17.8957 10.8023 17.923 11.2397 17.5192C11.6772 17.1154 11.7045 16.4335 11.3007 15.996L9.48802 14.0323L19.9611 14.0323C20.5565 14.0323 21.0391 13.5497 21.0391 12.9544C21.0391 12.3591 20.5565 11.8765 19.9611 11.8765L9.48805 11.8765L11.3007 9.91283C11.7044 9.47539 11.6772 8.79343 11.2397 8.38963Z"
+            fill="#929292" />
+        </svg>
+        <img src="/Projects/3/img/Frame 14.png" alt="...">
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M15.7603 8.38963C16.1977 7.98584 16.8797 8.01311 17.2835 8.45055L20.766 12.2232C21.1471 12.6361 21.1471 13.2726 20.766 13.6855L17.2835 17.4583C16.8797 17.8957 16.1977 17.923 15.7603 17.5192C15.3228 17.1154 15.2955 16.4335 15.6993 15.996L17.512 14.0323L7.03886 14.0323C6.44354 14.0323 5.96094 13.5497 5.96094 12.9544C5.96094 12.3591 6.44354 11.8765 7.03886 11.8765L17.5119 11.8765L15.6993 9.91283C15.2956 9.47539 15.3228 8.79343 15.7603 8.38963Z"
+            fill="#23262F" />
+        </svg>
+      </div>
+      <div class="weekly-cards_arrows__card">
+        <div class="weekly-cards_arrows__card___part1">
+          <h2>Recent Viewed</h2>
+
+
+          <div class="weekly-cards_arrows__card___part1____alex">
+            <img src="/Projects/3/img/icon.png" alt="">
+            <p>1</p>
+            <div class="weekly-cards_alex">
+              <div class="weekly-cards_arrows__card___part1____alex_____table">
+                <h2>Alex Ca.</h2>
+                <h3>Alexy</h3>
+              </div>
+            </div>
+          </div>
+          <div class="weekly-cards_arrows__card___part1____juliya">
+            <img src="/Projects/3/img/icon2.png" alt="...">
+            <p>2</p>
+            <div class="weekly-cards_juliya">
+              <div class="weekly-cards_arrows__card___part1____juliya_____table">
+                <h2>Juliya S.</h2>
+                <h3>JuliyaS</h3>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="weekly-card_arrows__card___part2">
+          <p id="weekly-p">...</p>
+          <div class="weekly-card_arrows__card___part2____num1">
+            <h2><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                <path
+                  d="M9.43669 1.50488L4.93555 9.06681L9.43669 11.7675L13.9378 9.06681L9.43669 1.50488ZM4.93555 9.96704L9.43669 16.2686L13.9378 9.96704L9.43669 12.6677L4.93555 9.96704Z"
+                  fill="#141416" />
+              </svg>8,456</h2>
+            <h3>+23,00%</h3>
+          </div>
+          <div class="weekly-card_arrows__card___part2____num2">
+            <h2><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                <path
+                  d="M9.43669 1.96094L4.93555 9.52286L9.43669 12.2236L13.9378 9.52286L9.43669 1.96094ZM4.93555 10.4231L9.43669 16.7247L13.9378 10.4231L9.43669 13.1238L4.93555 10.4231Z"
+                  fill="#141416" />
+              </svg>5,327</h2>
+            <h3>-32,01%</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="collection">
+    <h2 id="top-collection">Top Collection</h2>
+    <div class="collection">
+      <div class="first-col">
+        <p>Collection</p>
+        <div class="first-card">
+          <img src="/Projects/3/img/icon.png" alt="">
+          <div class="first-card_info">
+            <h2>Alex Ca.</h2>
+            <h3>By Alex</h3>
+          </div>
+        </div>
+        <div class="second-card">
+          <img src="/Projects/3/img/icon2.png" alt="">
+          <div class="second-card_info">
+            <h2>Alex Ca.</h2>
+            <h3>By Alex</h3>
+          </div>
+        </div>
+        <div class="third-card">
+          <img src="/Projects/3/img/icon.png" alt="">
+          <div class="third-card_info">
+            <h2>Alex Ca.</h2>
+            <h3>By Alex</h3>
+          </div>
+        </div>
+        <div class="fourth-card">
+          <img src="/Projects/3/img/icon2.png" alt="">
+          <div class="fourth-card_info">
+            <h2>Alex Ca.</h2>
+            <h3>By Alex</h3>
+          </div>
+        </div>
+
+      </div>
+      <div class="second-col">
+        <p>Volume</p>
+        <div class="first-volume">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+            <path
+              d="M15.975 2.81445L7.76758 16.6029L15.975 21.5273L24.1824 16.6029L15.975 2.81445ZM7.76758 18.2444L15.975 29.7347L24.1824 18.2444L15.975 23.1688L7.76758 18.2444Z"
+              fill="#141416" />
+          </svg>
+          <h2>8,456</h2>
+        </div>
+        <div class="second-volume">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+            <path
+              d="M15.975 2.81445L7.76758 16.6029L15.975 21.5273L24.1824 16.6029L15.975 2.81445ZM7.76758 18.2444L15.975 29.7347L24.1824 18.2444L15.975 23.1688L7.76758 18.2444Z"
+              fill="#141416" />
+          </svg>
+          <h2>4,780</h2>
+        </div>
+        <div class="third-volume">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+            <path
+              d="M15.975 2.81445L7.76758 16.6029L15.975 21.5273L24.1824 16.6029L15.975 2.81445ZM7.76758 18.2444L15.975 29.7347L24.1824 18.2444L15.975 23.1688L7.76758 18.2444Z"
+              fill="#141416" />
+          </svg>
+          <h2>8,456</h2>
+        </div>
+        <div class="fourth-volume">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+            <path
+              d="M15.975 2.81445L7.76758 16.6029L15.975 21.5273L24.1824 16.6029L15.975 2.81445ZM7.76758 18.2444L15.975 29.7347L24.1824 18.2444L15.975 23.1688L7.76758 18.2444Z"
+              fill="#141416" />
+          </svg>
+          <h2>4,780</h2>
+        </div>
+
+      </div>
+      <div class="third-col">
+        <p>24h %</p>
+        <div class="first-24">
+          <h2>+ 27.78%</h2>
+        </div>
+        <div class="second-24">
+          <h2>+ 27.78%</h2>
+        </div>
+        <div class="third-24">
+          <h2>+ 27.78%</h2>
+        </div>
+        <div class="fourth-24">
+          <h2>+ 27.78%</h2>
+        </div>
+      </div>
+      <div class="fourth-col">
+        <p>Floor Price</p>
+        <div class="first-price">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+            <path
+              d="M16.1605 2.81445L7.95312 16.6029L16.1605 21.5273L24.3679 16.6029L16.1605 2.81445ZM7.95312 18.2444L16.1605 29.7347L24.3679 18.2444L16.1605 23.1688L7.95312 18.2444Z"
+              fill="#141416" />
+          </svg>3,5
+        </div>
+        <div class="second-price">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+            <path
+              d="M16.1605 2.81445L7.95312 16.6029L16.1605 21.5273L24.3679 16.6029L16.1605 2.81445ZM7.95312 18.2444L16.1605 29.7347L24.3679 18.2444L16.1605 23.1688L7.95312 18.2444Z"
+              fill="#141416" />
+          </svg>7,9
+        </div>
+        <div class="third-price">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+            <path
+              d="M16.1605 2.81445L7.95312 16.6029L16.1605 21.5273L24.3679 16.6029L16.1605 2.81445ZM7.95312 18.2444L16.1605 29.7347L24.3679 18.2444L16.1605 23.1688L7.95312 18.2444Z"
+              fill="#141416" />
+          </svg>3,5
+        </div>
+        <div class="fourth-price">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+            <path
+              d="M16.1605 2.81445L7.95312 16.6029L16.1605 21.5273L24.3679 16.6029L16.1605 2.81445ZM7.95312 18.2444L16.1605 29.7347L24.3679 18.2444L16.1605 23.1688L7.95312 18.2444Z"
+              fill="#141416" />
+          </svg>7,9
+        </div>
+      </div>
+      <div class="fifth-col">
+        <p>Owners</p>
+        <div class="first-owner">
+          <h2>2.2K</h2>
+        </div>
+        <div class="second-owner">
+          <h2>3.4K</h2>
+        </div>
+        <div class="third-owner">
+          <h2>2.2K</h2>
+        </div>
+        <div class="fourth-owner">
+          <h2>3.4K</h2>
+        </div>
+      </div>
+      <div class="sixth-col">
+        <p>Items</p>
+        <div class="first-item">
+          <h2>500</h2>
+        </div>
+        <div class="second-item">
+          <h2>900</h2>
+        </div>
+        <div class="third-item">
+          <h2>500</h2>
+        </div>
+        <div class="fourth-item">
+          <h2>900</h2>
+        </div>
+      </div>
+    </div>
+    <a href="#">Explore All<svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17"
+        fill="none">
+        <path d="M1.80176 1.36621L8.78414 8.34859L1.80176 15.331" stroke="#ACADB9" stroke-width="1.99471"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg></a>
+  </section>
+
+  <section id="market">
+
+    <div class="market">
+      <div class="market-info">
+        <h2>Explore Marketplace</h2>
+        <ul>
+          <li><a href="#">All</a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                fill="none">
+                <path
+                  d="M17.9933 2.56152H7.20502C5.58888 2.56152 4.2666 3.87331 4.2666 5.49994V20.6014C4.2666 22.228 5.58888 23.5503 7.20502 23.5503H17.9933C19.6199 23.5503 20.9317 22.228 20.9317 20.6014V5.49994C20.9317 3.87331 19.6199 2.56152 17.9933 2.56152ZM8.28597 17.7049H16.9123C17.3531 17.7049 17.6994 18.0617 17.6994 18.492C17.6994 18.9223 17.3531 19.2791 16.9123 19.2791H8.28597C7.8557 19.2791 7.49889 18.9223 7.49889 18.492C7.49889 18.0617 7.8557 17.7049 8.28597 17.7049ZM7.49889 13.0979C7.49889 12.6676 7.8557 12.3108 8.28597 12.3108H16.9123C17.3531 12.3108 17.6994 12.6676 17.6994 13.0979C17.6994 13.5386 17.3531 13.885 16.9123 13.885H8.28597C7.8557 13.885 7.49889 13.5386 7.49889 13.0979ZM16.9123 8.49084H8.28597C7.8557 8.49084 7.49889 8.14453 7.49889 7.70376C7.49889 7.27349 7.8557 6.91669 8.28597 6.91669H16.9123C17.3531 6.91669 17.6994 7.27349 17.6994 7.70376C17.6994 8.14453 17.3531 8.49084 16.9123 8.49084Z"
+                  fill="black" />
+              </svg>Category</a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                fill="none">
+                <path
+                  d="M19.5349 2.60352H6.58476C4.37045 2.60352 2.56543 4.40855 2.56543 6.62286V19.5729C2.56543 21.7872 4.37045 23.5923 6.58476 23.5923H19.5349C21.4448 23.5923 23.04 22.249 23.4492 20.465C23.5122 20.3495 23.5542 20.2236 23.5542 20.0872V6.62286C23.5542 4.40855 21.7492 2.60352 19.5349 2.60352ZM20.3219 14.1788C20.3219 14.6091 19.9651 14.9659 19.5349 14.9659C19.0941 14.9659 18.7478 14.6091 18.7478 14.1788V12.017C18.7478 11.5867 19.0941 11.2299 19.5349 11.2299C19.9651 11.2299 20.3219 11.5867 20.3219 12.017V14.1788ZM5.79769 14.1788V12.017C5.79769 11.5867 6.15449 11.2299 6.58476 11.2299C7.02553 11.2299 7.37184 11.5867 7.37184 12.017V14.1788C7.37184 14.6091 7.02553 14.9659 6.58476 14.9659C6.15449 14.9659 5.79769 14.6091 5.79769 14.1788ZM17.0791 9.86563V16.3302C17.0791 16.7709 16.7328 17.1172 16.2921 17.1172C15.8618 17.1172 15.505 16.7709 15.505 16.3302V9.86563C15.505 9.42486 15.8618 9.07855 16.2921 9.07855C16.7328 9.07855 17.0791 9.42486 17.0791 9.86563ZM13.8469 7.70379V18.492C13.8469 18.9223 13.4901 19.2791 13.0598 19.2791C12.6295 19.2791 12.2727 18.9223 12.2727 18.492V7.70379C12.2727 7.27352 12.6295 6.91671 13.0598 6.91671C13.4901 6.91671 13.8469 7.27352 13.8469 7.70379ZM10.6146 9.86563V16.3302C10.6146 16.7709 10.2578 17.1172 9.82756 17.1172C9.38679 17.1172 9.04048 16.7709 9.04048 16.3302V9.86563C9.04048 9.42486 9.38679 9.07855 9.82756 9.07855C10.2578 9.07855 10.6146 9.42486 10.6146 9.86563Z"
+                  fill="black" />
+              </svg>Collection</a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26"
+                fill="none">
+                <path
+                  d="M12.6548 9.96387V11.9788C11.8992 11.7899 11.3955 11.3596 11.3955 10.9713C11.3955 10.5725 11.8992 10.1423 12.6548 9.96387Z"
+                  fill="black" />
+                <path
+                  d="M15.4878 14.7487C15.4878 15.137 14.9841 15.5672 14.2285 15.7561V13.7412C14.9841 13.9196 15.4878 14.3499 15.4878 14.7487Z"
+                  fill="black" />
+                <path
+                  d="M20.6726 5.61883C18.7416 3.68786 16.1705 2.62793 13.442 2.62793C10.7134 2.62793 8.14232 3.68786 6.21135 5.61883C4.26989 7.54979 3.20996 10.1209 3.20996 12.86C3.20996 14.2032 3.47232 15.5255 3.98655 16.7744C4.50077 18.0232 5.25637 19.1356 6.21135 20.0906C7.15585 21.0456 8.27875 21.7907 9.52758 22.3049C10.7764 22.8296 12.0882 23.092 13.442 23.092C14.7958 23.092 16.1076 22.8296 17.3564 22.3049C18.6052 21.7907 19.7281 21.0456 20.6726 20.0906C21.6276 19.1356 22.3832 18.0232 22.8974 16.7744C23.4116 15.5255 23.674 14.2032 23.674 12.86C23.674 10.1209 22.6141 7.54979 20.6726 5.61883ZM14.2291 17.362V17.5824C14.2291 18.0127 13.8723 18.3695 13.442 18.3695C13.0117 18.3695 12.6549 18.0127 12.6549 17.5824V17.3515C11.7314 17.2046 10.9128 16.8058 10.3881 16.2077C10.1572 15.9348 10.1363 15.536 10.3461 15.2422C10.556 14.9378 10.9338 14.8329 11.2696 14.9588L12.6549 15.4835V13.5736C11.0178 13.3217 9.82142 12.2618 9.82142 10.971C9.82142 9.66966 11.0178 8.62022 12.6549 8.35786V8.13748C12.6549 7.69672 13.0117 7.3504 13.442 7.3504C13.8723 7.3504 14.2291 7.69672 14.2291 8.13748V8.35786C15.1526 8.51528 15.9711 8.91407 16.4958 9.50175C16.7267 9.77461 16.7477 10.1734 16.5378 10.4777C16.3909 10.6876 16.1495 10.8136 15.8977 10.8136C15.8032 10.8136 15.7088 10.7926 15.6143 10.7611L14.2291 10.2259V12.1358C15.8662 12.3877 17.0625 13.4476 17.0625 14.7489C17.0625 16.0502 15.8662 17.0997 14.2291 17.362Z"
+                  fill="black" />
+              </svg>Price</a></li>
+        </ul>
+      </div>
+      <div class="market-cards">
+        <div class="market-cards1">
+          <img src="/Projects/3/img/image.png" alt="">
+          <div class="weekly-cards_card1__info">
+            <h2>Sun-Glass</h2>
+            <h3>Current bid</h3>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M11.3438 1.63513L5.83008 10.8982L11.3438 14.2064L16.8575 10.8982L11.3438 1.63513ZM5.83008 12.0009L11.3438 19.7201L16.8575 12.0009L11.3438 15.3092L5.83008 12.0009Z"
+                  fill="#141416" />
+              </svg> 1.75</p>
+          </div>
+          <button>PLACE BID</button>
+        </div>
+        <div class="market-cards2">
+          <img src="/Projects/3/img/Rectangle 3 (2).png" alt="">
+          <div class="weekly-cards_card1__info">
+            <h2>Sun-Glass</h2>
+            <h3>Current bid</h3>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M11.3438 1.63513L5.83008 10.8982L11.3438 14.2064L16.8575 10.8982L11.3438 1.63513ZM5.83008 12.0009L11.3438 19.7201L16.8575 12.0009L11.3438 15.3092L5.83008 12.0009Z"
+                  fill="#141416" />
+              </svg> 1.75</p>
+          </div>
+          <button>PLACE BID</button>
+        </div>
+        <div class="market-cards3">
+          <img src="/Projects/3/img/Rectangle 3 (3).png" alt="">
+          <div class="weekly-cards_card1__info">
+            <h2>Sun-Glass</h2>
+            <h3>Current bid</h3>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M11.3438 1.63513L5.83008 10.8982L11.3438 14.2064L16.8575 10.8982L11.3438 1.63513ZM5.83008 12.0009L11.3438 19.7201L16.8575 12.0009L11.3438 15.3092L5.83008 12.0009Z"
+                  fill="#141416" />
+              </svg> 1.75</p>
+          </div>
+          <button>PLACE BID</button>
+        </div>
+        <div class="market-cards4">
+          <img src="/Projects/3/img/image (1).png" alt="">
+          <div class="weekly-cards_card1__info">
+            <h2>NuEvey</h2>
+            <h3>Current bid</h3>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M11.3438 1.63513L5.83008 10.8982L11.3438 14.2064L16.8575 10.8982L11.3438 1.63513ZM5.83008 12.0009L11.3438 19.7201L16.8575 12.0009L11.3438 15.3092L5.83008 12.0009Z"
+                  fill="#141416" />
+              </svg> 1.25</p>
+          </div>
+          <button>PLACE BID</button>
+        </div>
+        <div class="market-cards5">
+          <img src="/Projects/3/img/Rectangle 3 (3).png" alt="">
+          <div class="weekly-cards_card1__info">
+            <h2>Sun-Glass</h2>
+            <h3>Current bid</h3>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M11.3438 1.63513L5.83008 10.8982L11.3438 14.2064L16.8575 10.8982L11.3438 1.63513ZM5.83008 12.0009L11.3438 19.7201L16.8575 12.0009L11.3438 15.3092L5.83008 12.0009Z"
+                  fill="#141416" />
+              </svg> 1.75</p>
+          </div>
+          <button>PLACE BID</button>
+        </div>
+        <div class="market-cards6">
+          <img src="/Projects/3/img/image (1).png" alt="">
+          <div class="weekly-cards_card1__info">
+            <h2>NuEvey</h2>
+            <h3>Current bid</h3>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M11.3438 1.63513L5.83008 10.8982L11.3438 14.2064L16.8575 10.8982L11.3438 1.63513ZM5.83008 12.0009L11.3438 19.7201L16.8575 12.0009L11.3438 15.3092L5.83008 12.0009Z"
+                  fill="#141416" />
+              </svg> 1.25</p>
+          </div>
+          <button>PLACE BID</button>
+        </div>
+        <div class="market-cards7">
+          <img src="/Projects/3/img/Rectangle 3 (2).png" alt="">
+          <div class="weekly-cards_card1__info">
+            <h2>Sun-Glass</h2>
+            <h3>Current bid</h3>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M11.3438 1.63513L5.83008 10.8982L11.3438 14.2064L16.8575 10.8982L11.3438 1.63513ZM5.83008 12.0009L11.3438 19.7201L16.8575 12.0009L11.3438 15.3092L5.83008 12.0009Z"
+                  fill="#141416" />
+              </svg> 1.75</p>
+          </div>
+          <button>PLACE BID</button>
+        </div>
+        <div class="market-cards8">
+          <img src="/Projects/3/img/image.png" alt="">
+          <div class="weekly-cards_card1__info">
+            <h2>Sun-Glass</h2>
+            <h3>Current bid</h3>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M11.3438 1.63513L5.83008 10.8982L11.3438 14.2064L16.8575 10.8982L11.3438 1.63513ZM5.83008 12.0009L11.3438 19.7201L16.8575 12.0009L11.3438 15.3092L5.83008 12.0009Z"
+                  fill="#141416" />
+              </svg> 1.75</p>
+          </div>
+          <button>PLACE BID</button>
+        </div>
+      </div>
+    </div>
+    <a id="market-a" href="#">Explore All<svg xmlns="http://www.w3.org/2000/svg" width="10" height="17"
+        viewBox="0 0 10 17" fill="none">
+        <path d="M1.80176 1.36621L8.78414 8.34859L1.80176 15.331" stroke="#ACADB9" stroke-width="1.99471"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg></a>
+  </section>
+
+  <section id="cons">
+
+    <div class="cons">
+      <div class="cons-col1">
+        <h2><span>Just Unleash -</span> Your Inner Collector</h2>
+        <ul>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#12141D" />
+              <path
+                d="M15.0429 6.23787C14.9682 6.1625 14.8792 6.10267 14.7812 6.06185C14.6832 6.02102 14.5781 6 14.472 6C14.3658 6 14.2607 6.02102 14.1627 6.06185C14.0647 6.10267 13.9758 6.1625 13.901 6.23787L7.90986 12.2371L5.39278 9.71193C5.31516 9.63695 5.22353 9.57799 5.12312 9.53842C5.02271 9.49886 4.9155 9.47945 4.80759 9.48132C4.69969 9.48318 4.59321 9.50629 4.49423 9.5493C4.39525 9.59232 4.30572 9.65442 4.23074 9.73204C4.15576 9.80966 4.0968 9.90129 4.05723 10.0017C4.01766 10.1021 3.99826 10.2093 4.00012 10.3172C4.00199 10.4251 4.02509 10.5316 4.06811 10.6306C4.11113 10.7296 4.17322 10.8191 4.25084 10.8941L7.33889 13.9821C7.41365 14.0575 7.50259 14.1173 7.60059 14.1582C7.69859 14.199 7.8037 14.22 7.90986 14.22C8.01602 14.22 8.12113 14.199 8.21913 14.1582C8.31712 14.1173 8.40607 14.0575 8.48083 13.9821L15.0429 7.42002C15.1246 7.34471 15.1897 7.25332 15.2343 7.15159C15.2788 7.04986 15.3018 6.94001 15.3018 6.82895C15.3018 6.71789 15.2788 6.60803 15.2343 6.50631C15.1897 6.40458 15.1246 6.31318 15.0429 6.23787Z"
+                fill="#D1EDF5" />
+            </svg>Best Seller All Around World</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#12141D" />
+              <path
+                d="M15.0429 6.23787C14.9682 6.1625 14.8792 6.10267 14.7812 6.06185C14.6832 6.02102 14.5781 6 14.472 6C14.3658 6 14.2607 6.02102 14.1627 6.06185C14.0647 6.10267 13.9758 6.1625 13.901 6.23787L7.90986 12.2371L5.39278 9.71193C5.31516 9.63695 5.22353 9.57799 5.12312 9.53842C5.02271 9.49886 4.9155 9.47945 4.80759 9.48132C4.69969 9.48318 4.59321 9.50629 4.49423 9.5493C4.39525 9.59232 4.30572 9.65442 4.23074 9.73204C4.15576 9.80966 4.0968 9.90129 4.05723 10.0017C4.01766 10.1021 3.99826 10.2093 4.00012 10.3172C4.00199 10.4251 4.02509 10.5316 4.06811 10.6306C4.11113 10.7296 4.17322 10.8191 4.25084 10.8941L7.33889 13.9821C7.41365 14.0575 7.50259 14.1173 7.60059 14.1582C7.69859 14.199 7.8037 14.22 7.90986 14.22C8.01602 14.22 8.12113 14.199 8.21913 14.1582C8.31712 14.1173 8.40607 14.0575 8.48083 13.9821L15.0429 7.42002C15.1246 7.34471 15.1897 7.25332 15.2343 7.15159C15.2788 7.04986 15.3018 6.94001 15.3018 6.82895C15.3018 6.71789 15.2788 6.60803 15.2343 6.50631C15.1897 6.40458 15.1246 6.31318 15.0429 6.23787Z"
+                fill="#D1EDF5" />
+            </svg>$2M+ Transections Every Day</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#12141D" />
+              <path
+                d="M15.0429 6.23787C14.9682 6.1625 14.8792 6.10267 14.7812 6.06185C14.6832 6.02102 14.5781 6 14.472 6C14.3658 6 14.2607 6.02102 14.1627 6.06185C14.0647 6.10267 13.9758 6.1625 13.901 6.23787L7.90986 12.2371L5.39278 9.71193C5.31516 9.63695 5.22353 9.57799 5.12312 9.53842C5.02271 9.49886 4.9155 9.47945 4.80759 9.48132C4.69969 9.48318 4.59321 9.50629 4.49423 9.5493C4.39525 9.59232 4.30572 9.65442 4.23074 9.73204C4.15576 9.80966 4.0968 9.90129 4.05723 10.0017C4.01766 10.1021 3.99826 10.2093 4.00012 10.3172C4.00199 10.4251 4.02509 10.5316 4.06811 10.6306C4.11113 10.7296 4.17322 10.8191 4.25084 10.8941L7.33889 13.9821C7.41365 14.0575 7.50259 14.1173 7.60059 14.1582C7.69859 14.199 7.8037 14.22 7.90986 14.22C8.01602 14.22 8.12113 14.199 8.21913 14.1582C8.31712 14.1173 8.40607 14.0575 8.48083 13.9821L15.0429 7.42002C15.1246 7.34471 15.1897 7.25332 15.2343 7.15159C15.2788 7.04986 15.3018 6.94001 15.3018 6.82895C15.3018 6.71789 15.2788 6.60803 15.2343 6.50631C15.1897 6.40458 15.1246 6.31318 15.0429 6.23787Z"
+                fill="#D1EDF5" />
+            </svg>Secure Transactions</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#12141D" />
+              <path
+                d="M15.0429 6.23787C14.9682 6.1625 14.8792 6.10267 14.7812 6.06185C14.6832 6.02102 14.5781 6 14.472 6C14.3658 6 14.2607 6.02102 14.1627 6.06185C14.0647 6.10267 13.9758 6.1625 13.901 6.23787L7.90986 12.2371L5.39278 9.71193C5.31516 9.63695 5.22353 9.57799 5.12312 9.53842C5.02271 9.49886 4.9155 9.47945 4.80759 9.48132C4.69969 9.48318 4.59321 9.50629 4.49423 9.5493C4.39525 9.59232 4.30572 9.65442 4.23074 9.73204C4.15576 9.80966 4.0968 9.90129 4.05723 10.0017C4.01766 10.1021 3.99826 10.2093 4.00012 10.3172C4.00199 10.4251 4.02509 10.5316 4.06811 10.6306C4.11113 10.7296 4.17322 10.8191 4.25084 10.8941L7.33889 13.9821C7.41365 14.0575 7.50259 14.1173 7.60059 14.1582C7.69859 14.199 7.8037 14.22 7.90986 14.22C8.01602 14.22 8.12113 14.199 8.21913 14.1582C8.31712 14.1173 8.40607 14.0575 8.48083 13.9821L15.0429 7.42002C15.1246 7.34471 15.1897 7.25332 15.2343 7.15159C15.2788 7.04986 15.3018 6.94001 15.3018 6.82895C15.3018 6.71789 15.2788 6.60803 15.2343 6.50631C15.1897 6.40458 15.1246 6.31318 15.0429 6.23787Z"
+                fill="#D1EDF5" />
+            </svg>Exclusive Collections From Sellers</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#12141D" />
+              <path
+                d="M15.0429 6.23787C14.9682 6.1625 14.8792 6.10267 14.7812 6.06185C14.6832 6.02102 14.5781 6 14.472 6C14.3658 6 14.2607 6.02102 14.1627 6.06185C14.0647 6.10267 13.9758 6.1625 13.901 6.23787L7.90986 12.2371L5.39278 9.71193C5.31516 9.63695 5.22353 9.57799 5.12312 9.53842C5.02271 9.49886 4.9155 9.47945 4.80759 9.48132C4.69969 9.48318 4.59321 9.50629 4.49423 9.5493C4.39525 9.59232 4.30572 9.65442 4.23074 9.73204C4.15576 9.80966 4.0968 9.90129 4.05723 10.0017C4.01766 10.1021 3.99826 10.2093 4.00012 10.3172C4.00199 10.4251 4.02509 10.5316 4.06811 10.6306C4.11113 10.7296 4.17322 10.8191 4.25084 10.8941L7.33889 13.9821C7.41365 14.0575 7.50259 14.1173 7.60059 14.1582C7.69859 14.199 7.8037 14.22 7.90986 14.22C8.01602 14.22 8.12113 14.199 8.21913 14.1582C8.31712 14.1173 8.40607 14.0575 8.48083 13.9821L15.0429 7.42002C15.1246 7.34471 15.1897 7.25332 15.2343 7.15159C15.2788 7.04986 15.3018 6.94001 15.3018 6.82895C15.3018 6.71789 15.2788 6.60803 15.2343 6.50631C15.1897 6.40458 15.1246 6.31318 15.0429 6.23787Z"
+                fill="#D1EDF5" />
+            </svg>Easy Buying and Selling</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#12141D" />
+              <path
+                d="M15.0429 6.23787C14.9682 6.1625 14.8792 6.10267 14.7812 6.06185C14.6832 6.02102 14.5781 6 14.472 6C14.3658 6 14.2607 6.02102 14.1627 6.06185C14.0647 6.10267 13.9758 6.1625 13.901 6.23787L7.90986 12.2371L5.39278 9.71193C5.31516 9.63695 5.22353 9.57799 5.12312 9.53842C5.02271 9.49886 4.9155 9.47945 4.80759 9.48132C4.69969 9.48318 4.59321 9.50629 4.49423 9.5493C4.39525 9.59232 4.30572 9.65442 4.23074 9.73204C4.15576 9.80966 4.0968 9.90129 4.05723 10.0017C4.01766 10.1021 3.99826 10.2093 4.00012 10.3172C4.00199 10.4251 4.02509 10.5316 4.06811 10.6306C4.11113 10.7296 4.17322 10.8191 4.25084 10.8941L7.33889 13.9821C7.41365 14.0575 7.50259 14.1173 7.60059 14.1582C7.69859 14.199 7.8037 14.22 7.90986 14.22C8.01602 14.22 8.12113 14.199 8.21913 14.1582C8.31712 14.1173 8.40607 14.0575 8.48083 13.9821L15.0429 7.42002C15.1246 7.34471 15.1897 7.25332 15.2343 7.15159C15.2788 7.04986 15.3018 6.94001 15.3018 6.82895C15.3018 6.71789 15.2788 6.60803 15.2343 6.50631C15.1897 6.40458 15.1246 6.31318 15.0429 6.23787Z"
+                fill="#D1EDF5" />
+            </svg>Join Our Community</li>
+        </ul>
+        <a href="#">Explore More<svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17"
+            fill="none">
+            <path d="M1.2334 1.36621L8.21578 8.34859L1.2334 15.331" stroke="#ACADB9" stroke-width="1.99471"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg></a>
+      </div>
+      <div class="cons-col2">
+        <div class="cons-col2_card1">
+          <div class="weekly-cards_arrows__card___part1">
+            <h2>Recent Viewed</h2>
+
+
+            <div class="weekly-cards_arrows__card___part1____alex">
+              <img src="/Projects/3/img/icon.png" alt="">
+              <p>1</p>
+              <div class="weekly-cards_alex">
+                <div class="weekly-cards_arrows__card___part1____alex_____table">
+                  <h2>Alex Ca.</h2>
+                  <h3>Alexy</h3>
+                </div>
+              </div>
+            </div>
+            <div class="weekly-cards_arrows__card___part1____juliya">
+              <img src="/Projects/3/img/icon2.png" alt="...">
+              <p>2</p>
+              <div class="weekly-cards_juliya">
+                <div class="weekly-cards_arrows__card___part1____juliya_____table">
+                  <h2>Juliya S.</h2>
+                  <h3>JuliyaS</h3>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="weekly-card_arrows__card___part2">
+            <p id="weekly-p">...</p>
+            <div class="weekly-card_arrows__card___part2____num1">
+              <h2><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                  <path
+                    d="M9.43669 1.50488L4.93555 9.06681L9.43669 11.7675L13.9378 9.06681L9.43669 1.50488ZM4.93555 9.96704L9.43669 16.2686L13.9378 9.96704L9.43669 12.6677L4.93555 9.96704Z"
+                    fill="#141416" />
+                </svg>8,456</h2>
+              <h3>+23,00%</h3>
+            </div>
+            <div class="weekly-card_arrows__card___part2____num2">
+              <h2><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                  <path
+                    d="M9.43669 1.96094L4.93555 9.52286L9.43669 12.2236L13.9378 9.52286L9.43669 1.96094ZM4.93555 10.4231L9.43669 16.7247L13.9378 10.4231L9.43669 13.1238L4.93555 10.4231Z"
+                    fill="#141416" />
+                </svg>5,327</h2>
+              <h3>-32,01%</h3>
+            </div>
+          </div>
+        </div>
+        <div class="cons-col2_cards2">
+          <h4>Best Sellers</h4>
+          <div class="cons-col2_card2">
+            <div class="cons-col2_card2_img">
+              <img src="/Projects/3/img/icon.png" alt="">
+              <p>1</p>
+              <div class="cons-col2_card2_img_info">
+                <h2>Alex Ca.</h2>
+                <h3>@Alexy</h3>
+              </div>
+            </div>
+            <div class="cons-col2_card2_info">
+              <a href="#">Follow</a>
+            </div>
+          </div>
+          <div class="cons-col2_card3">
+            <div class="cons-col2_card3_img">
+              <img src="/Projects/3/img/icon2.png" alt="">
+              <p>2</p>
+              <div class="cons-col2_card3_img_info">
+                <h2>Juliya Sa.</h2>
+                <h3>@JuliyaS</h3>
+              </div>
+            </div>
+            <div class="cons-col2_card3_info">
+              <a href="#">Follow</a>
+            </div>
+          </div>
+          <div class="cons-col2_card4">
+            <div class="cons-col2_card4_img">
+              <img src="/Projects/3/img/Rectangle 3 (2).png" alt="">
+              <p>2</p>
+              <div class="cons-col2_card4_img_info">
+                <h2>Juliya Sa.</h2>
+                <h3>@JuliyaS</h3>
+              </div>
+            </div>
+            <div class="cons-col2_card4_info">
+              <a href="#">Follow</a>
+            </div>
+          </div>
+          <div class="cons-col2_card5">
+            <div class="cons-col2_card5_img">
+              <img src="/Projects/3/img/Rectangle 3 (3).png" alt="">
+              <p>3</p>
+              <div class="cons-col2_card5_img_info">
+                <h2>Trevor Pu.</h2>
+                <h3>@TrevorP</h3>
+              </div>
+            </div>
+            <div class="cons-col2_card5_info">
+              <a href="#">Unfollow</a>
+            </div>
+          </div>
+          <div class="cons-col2_card6">
+            <div class="cons-col2_card6_img">
+              <img src="/Projects/3/img/icon2.png" alt="">
+              <p>1</p>
+              <div class="cons-col2_card6_img_info">
+                <h2>Alex Ca.</h2>
+                <h3>@Alexy</h3>
+              </div>
+            </div>
+            <div class="cons-col2_card6_info">
+              <a href="#">Follow</a>
+            </div>
+          </div>
+          <div class="cons-col2_card7">
+            <div class="cons-col2_card7_img">
+              <img src="/Projects/3/img/icon2.png" alt="">
+              <p>1</p>
+              <div class="cons-col2_card7_img_info">
+                <h2>Alex Ca.</h2>
+                <h3>@Alexy</h3>
+              </div>
+            </div>
+            <div class="cons-col2_card7_info">
+              <a href="#">Unfollow</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cons-col3">
+        <div class="cons-col3_decor">
+          <svg id="point" xmlns="http://www.w3.org/2000/svg" width="9" height="8" viewBox="0 0 9 8" fill="none">
+            <circle cx="4.55048" cy="4.17743" r="3.79755" fill="#141416" />
+          </svg>
+          <img id="label" src="/Projects/3/img/Rectangle 3 (2).png" alt="">
+          <div class="cons-col3_decor__check">
+            <svg id="green" xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
+              <path
+                d="M6.34208 1.21477C7.2233 0.705997 8.30901 0.705996 9.19024 1.21477L13.7418 3.84262C14.623 4.3514 15.1659 5.29165 15.1659 6.3092V11.5649C15.1659 12.5825 14.623 13.5227 13.7418 14.0315L9.19024 16.6593C8.30901 17.1681 7.2233 17.1681 6.34208 16.6593L1.7905 14.0315C0.909279 13.5227 0.366423 12.5825 0.366423 11.5649V6.3092C0.366423 5.29165 0.909279 4.3514 1.7905 3.84262L6.34208 1.21477Z"
+                fill="#45B36B" />
+            </svg>
+            <svg id="check" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M2.91797 5.93784L4.81674 7.83661L8.61429 4.03906" stroke="#FCFCFD" stroke-width="1.42408"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+        <div class="cons-col3_info">
+          <h2><span id="bid">New bid</span>
+            Rotation</h2>
+          <h3>0.002 ETH <span id="data">6 Oct 2022, 11:44 PM</span></h3>
+        </div>
+        <img src="/Projects/3/img/Rectangle 3 (2).png" alt="">
+      </div>
+    </div>
+    <div class="sell-container">
+      <div class="sell">
+        <div class="sell-info">
+          <h2>Create and Sell NFTs</h2>
+          <h3>World’s Largest NFT Place</h3>
+          <a class="sell-a1" href="#">Explore More</a>
+          <a class="sell-a2" href="#">Sell Artwork</a>
+        </div>
+        <img src="/Projects/3/img/Rectangle 31.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <footer id="sea">
+
+    <div class="sea">
+      <div class="sea_first-row">
+        <div class="sea_first-row_img">
+          <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+            <path
+              d="M57.5514 44.3083C55.1681 44.3083 54.1118 43.3874 52.6222 42.0874C50.9702 40.6791 48.9119 38.8916 45.0389 38.8916C41.1389 38.8916 39.1076 40.6791 37.4556 42.0874C35.966 43.3874 34.8827 44.3083 32.4993 44.3083C30.1431 44.3083 29.0597 43.3874 27.5702 42.0874C25.9181 40.6791 23.8598 38.8916 19.9869 38.8916C16.0869 38.8916 14.0285 40.6791 12.3765 42.0874C10.8869 43.3874 9.8306 44.3083 7.44727 44.3083C6.33685 44.3083 5.41602 45.2291 5.41602 46.3395C5.41602 47.477 6.33685 48.3708 7.44727 48.3708C11.3473 48.3708 13.3785 46.6104 15.0306 45.1749C16.5201 43.8749 17.6035 42.9541 19.9869 42.9541C22.3702 42.9541 23.4265 43.8749 24.916 45.1749C26.5681 46.6104 28.6264 48.3708 32.4993 48.3708C36.3993 48.3708 38.4577 46.6104 40.1098 45.1749C41.5993 43.8749 42.6556 42.9541 45.0389 42.9541C47.3952 42.9541 48.4785 43.8749 49.9681 45.1749C51.6202 46.6104 53.6785 48.3708 57.5514 48.3708C58.6618 48.3708 59.5827 47.477 59.5827 46.3395C59.5827 45.2291 58.6618 44.3083 57.5514 44.3083Z"
+              fill="white" />
+            <path
+              d="M57.5514 33.1501C55.1681 33.1501 54.1118 32.2021 52.6222 30.9292C50.9702 29.4938 48.9119 27.7334 45.0389 27.7334C41.1389 27.7334 39.1076 29.4938 37.4556 30.9292C35.966 32.2021 34.8827 33.1501 32.4993 33.1501C30.1431 33.1501 29.0597 32.2021 27.5702 30.9292C25.9181 29.4938 23.8598 27.7334 19.9869 27.7334C16.0869 27.7334 14.0285 29.4938 12.3765 30.9292C10.8869 32.2021 9.8306 33.1501 7.44727 33.1501C6.33685 33.1501 5.41602 34.0438 5.41602 35.1813C5.41602 36.2917 6.33685 37.2126 7.44727 37.2126C11.3473 37.2126 13.3785 35.4251 15.0306 33.9896C16.5201 32.7167 17.6035 31.7959 19.9869 31.7959C22.3702 31.7959 23.4265 32.7167 24.916 33.9896C26.5681 35.4251 28.6264 37.2126 32.4993 37.2126C36.3993 37.2126 38.4577 35.4251 40.1098 33.9896C41.5993 32.7167 42.6556 31.7959 45.0389 31.7959C47.3952 31.7959 48.4785 32.7167 49.9681 33.9896C51.6202 35.4251 53.6785 37.2126 57.5514 37.2126C58.6618 37.2126 59.5827 36.2917 59.5827 35.1813C59.5827 34.0438 58.6618 33.1501 57.5514 33.1501Z"
+              fill="white" />
+            <path
+              d="M7.44727 26.1091C11.3473 26.1091 13.3785 24.3216 15.0306 22.9132C16.5201 21.6132 17.6035 20.6924 19.9869 20.6924C22.3702 20.6924 23.4265 21.6132 24.916 22.9132C26.5681 24.3216 28.6264 26.1091 32.4993 26.1091C36.3993 26.1091 38.4577 24.3216 40.1098 22.9132C41.5993 21.6132 42.6556 20.6924 45.0389 20.6924C47.3952 20.6924 48.4785 21.6132 49.9681 22.9132C51.6202 24.3216 53.6785 26.1091 57.5514 26.1091C58.6618 26.1091 59.5827 25.1882 59.5827 24.0778C59.5827 22.9403 58.6618 22.0466 57.5514 22.0466C55.1681 22.0466 54.1118 21.1257 52.6222 19.8257C50.9702 18.3903 48.9119 16.6299 45.0389 16.6299C41.1389 16.6299 39.1076 18.3903 37.4556 19.8257C35.966 21.1257 34.8827 22.0466 32.4993 22.0466C30.1431 22.0466 29.0597 21.1257 27.5702 19.8257C25.9181 18.3903 23.8598 16.6299 19.9869 16.6299C16.0869 16.6299 14.0285 18.3903 12.3765 19.8257C10.8869 21.1257 9.8306 22.0466 7.44727 22.0466C6.33685 22.0466 5.41602 22.9403 5.41602 24.0778C5.41602 25.1882 6.33685 26.1091 7.44727 26.1091Z"
+              fill="white" />
+          </svg>
+          <p>DiveSea</p>
+        </div>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Term & Conditions</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a id="a-last" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="sea_second-row">
+        <div class="sea_second-row_info">
+          <p>© 2023 EATLY All Rights Reserved.</p>
+        </div>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="235" height="22" viewBox="0 0 235 22" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M159.953 10.6695H156.972V21.338H152.526V12.415V10.6695H150.435V6.90414H152.526V4.4462C152.526 2.72041 153.363 0.000976562 156.972 0.000976562H160.266V3.66174H157.913C157.547 3.66174 156.972 3.87094 156.972 4.70768V6.90414H160.319L159.953 10.6695Z"
+              fill="#535353" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M10.7721 0C12.1916 0.0506994 13.6618 0.0506994 15.0812 0.101392C16.3486 0.152085 17.5146 0.354867 18.6299 1.0139C20.0494 1.87572 20.9112 3.14309 21.2154 4.76533C21.3674 5.72853 21.4181 6.74243 21.4688 7.70564C21.5195 9.83483 21.4688 11.964 21.4688 14.0932C21.4688 15.2085 21.4181 16.3238 21.0633 17.3884C20.3535 19.4669 18.8834 20.7342 16.7542 21.1398C15.791 21.3426 14.7771 21.3426 13.8139 21.3933C11.6846 21.444 9.60615 21.3933 7.47694 21.3933C6.36165 21.3933 5.24635 21.3426 4.18176 20.9877C2.10325 20.278 0.835867 18.8078 0.430303 16.6786C0.227525 15.7154 0.227525 14.7015 0.176829 13.7383C0.126131 11.6091 0.176829 9.47996 0.176829 7.35077C0.176829 6.23549 0.227525 5.1202 0.582391 4.05559C1.29213 1.9771 2.76229 0.709734 4.89148 0.304173C5.8547 0.101399 6.8686 0.101399 7.83181 0.0506994C8.79502 0 9.75823 0 10.7721 0ZM19.5426 10.4939C19.4919 10.4939 19.5426 10.4939 19.5426 10.4939C19.4919 9.6321 19.4919 8.82097 19.4919 7.95916C19.4919 7.14805 19.4412 6.33692 19.3398 5.52581C19.137 3.70078 18.0724 2.4841 16.2981 2.12924C15.3855 1.92646 14.3716 1.92646 13.4591 1.92646C11.6341 1.87577 9.85976 1.87577 8.03473 1.92646C7.12222 1.92646 6.2097 1.97715 5.34788 2.12924C3.82702 2.38271 2.76243 3.24453 2.30617 4.76538C2.15408 5.27233 2.10339 5.77928 2.05269 6.28623C2.002 8.21264 2.002 10.139 2.002 12.0655C2.002 13.2821 2.05269 14.5495 2.15408 15.7662C2.30617 17.5912 3.42146 18.8586 5.2465 19.1627C6.159 19.3148 7.12222 19.3655 8.08543 19.3655C9.85976 19.4162 11.6341 19.3655 13.4591 19.3655C14.2703 19.3655 15.0814 19.3148 15.8925 19.2134C16.6529 19.1627 17.3627 18.9093 17.971 18.4023C18.9849 17.5912 19.3398 16.5266 19.3905 15.3099C19.4919 13.7891 19.4919 12.1668 19.5426 10.4939Z"
+              fill="#535353" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M16.2471 10.6967C16.2471 13.7384 13.8137 16.1717 10.772 16.1717C7.73025 16.1717 5.29688 13.7384 5.29688 10.646C5.29688 7.65502 7.78094 5.22168 10.8227 5.22168C13.8137 5.22168 16.2471 7.65502 16.2471 10.6967ZM10.7719 14.2453C12.6983 14.2453 14.3205 12.623 14.3205 10.6966C14.3205 8.77025 12.6983 7.14801 10.7719 7.14801C8.79474 7.14801 7.22318 8.77025 7.22318 10.6966C7.17248 12.623 8.79474 14.2453 10.7719 14.2453Z"
+              fill="#535353" />
+            <path
+              d="M17.7184 4.96758C17.7184 5.67731 17.1607 6.28566 16.451 6.28566C15.7413 6.28566 15.1329 5.67731 15.1836 4.96758C15.1836 4.25785 15.7413 3.7002 16.451 3.7002C17.1607 3.7002 17.7184 4.25784 17.7184 4.96758Z"
+              fill="#535353" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M96.6325 12.4811V20.3602H92.0315V12.9987C92.0315 11.1583 91.3989 9.89304 89.731 9.89304C88.4658 9.89304 87.7181 10.7557 87.373 11.5609C87.258 11.8484 87.2005 12.251 87.2005 12.6536V20.3602H82.5995C82.5995 20.3602 82.657 7.88013 82.5995 6.61487H87.2005V8.57027C87.2005 8.57027 87.2005 8.62777 87.143 8.62777H87.2005V8.57027C87.8331 7.65008 88.8684 6.26979 91.3414 6.26979C94.332 6.26979 96.6325 8.28271 96.6325 12.4811ZM77.883 0.000976562C76.3301 0.000976562 75.2949 1.03619 75.2949 2.35897C75.2949 3.68174 76.2726 4.71697 77.8255 4.71697H77.883C79.4933 4.71697 80.471 3.68175 80.471 2.35897C80.4135 1.03619 79.4358 0.000976562 77.883 0.000976562ZM75.5256 20.3602H80.069V6.61489H75.5256V20.3602Z"
+              fill="#535353" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M234.615 3.82596C233.812 4.1774 233.009 4.42842 232.105 4.52883C233.009 3.97658 233.712 3.1231 234.013 2.11901C233.159 2.62106 232.206 2.97249 231.252 3.1733C230.448 2.31982 229.294 1.76758 228.039 1.76758C225.629 1.76758 223.671 3.72555 223.671 6.13537C223.671 6.48681 223.721 6.83823 223.771 7.13947C220.106 6.93865 216.893 5.23169 214.734 2.57085C214.333 3.22351 214.132 3.97658 214.132 4.77985C214.132 6.28599 214.885 7.64151 216.09 8.44478C215.387 8.44478 214.684 8.24397 214.082 7.89253V7.94273C214.082 10.0513 215.588 11.8587 217.596 12.2603C217.245 12.3607 216.843 12.4109 216.441 12.4109C216.14 12.4109 215.889 12.3607 215.638 12.3105C216.19 14.0677 217.797 15.3228 219.755 15.373C218.249 16.5277 216.391 17.2306 214.333 17.2306C213.981 17.2306 213.63 17.2306 213.278 17.1804C215.236 18.4355 217.496 19.1383 220.006 19.1383C228.089 19.1383 232.457 12.4611 232.457 6.68762C232.457 6.48681 232.457 6.28599 232.457 6.13537C233.31 5.48272 234.063 4.67944 234.615 3.82596Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
